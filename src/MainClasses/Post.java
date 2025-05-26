@@ -2,7 +2,9 @@
 package MainClasses;
 
 // Imports
+import Interfaces.PostInterface;
 import java.util.*;
+
 
 public class Post implements PostInterface {
     private String id;

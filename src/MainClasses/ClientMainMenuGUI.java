@@ -3,7 +3,10 @@ package MainClasses;
 
 // Imports
 
+import Interfaces.GuiInterface;
+
 import javax.swing.*;
+import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
@@ -14,6 +17,7 @@ import java.awt.image.BufferedImage;
 import java.io.*;
 import java.net.Socket;
 import java.util.*;
+import java.util.concurrent.atomic.AtomicBoolean;
 import javax.imageio.*;
 
 public class ClientMainMenuGUI extends JFrame implements GuiInterface {
@@ -94,7 +98,7 @@ public class ClientMainMenuGUI extends JFrame implements GuiInterface {
 
         // Sets the icon
         try {
-            Image icon = ImageIO.read(new File("/Users/pate2389/Downloads/icon.png"));
+            Image icon = ImageIO.read(new File("public/icon.png"));
             setIconImage(icon);
         } catch (IOException e) {
             System.err.println("Failed to load icon");

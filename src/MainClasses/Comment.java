@@ -2,7 +2,9 @@
 package MainClasses;
 
 // Imports
+import Interfaces.CommentInterface;
 import java.util.*;
+
 
 public class Comment implements CommentInterface {
     private String id;

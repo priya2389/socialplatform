@@ -2,8 +2,11 @@
 package MainClasses;
 
 // Imports
+import Interfaces.FriendInterface;
 import java.io.*;
 import java.util.*;
+
+
 
 public class FriendRequestSystem implements FriendInterface {
     private static final String PENDING_REQUEST_FILE = "DataBase/PendingFriendRequest.txt";

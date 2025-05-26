@@ -1,8 +1,10 @@
 // Package
-package MainClasses;
+package Interfaces;
 
 // Imports
 import java.util.*;
+
+import MainClasses.UserManager;
 
 public interface UserInterface {
 

@@ -2,6 +2,7 @@
 package MainClasses;
 
 // Imports
+import Interfaces.UserFeedInterface;
 import java.io.*;
 import java.util.*;
 import java.util.concurrent.locks.ReentrantLock;

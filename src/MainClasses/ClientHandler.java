@@ -1,12 +1,15 @@
 // Package
-package MainClasses;
+package MainClasses; 
 
 // Imports
+import Interfaces.ClientHandlerInterface;
 import java.io.*;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+
+
 
 public class ClientHandler implements Runnable, ClientHandlerInterface {
     private Socket clientSocket;

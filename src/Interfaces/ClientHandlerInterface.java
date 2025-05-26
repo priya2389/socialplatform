@@ -1,5 +1,5 @@
 // Packages
-package MainClasses;
+package Interfaces;
 
 public interface ClientHandlerInterface {
 

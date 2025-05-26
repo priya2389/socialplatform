@@ -13,6 +13,7 @@ import java.util.Scanner;
 import javax.imageio.*;
 import java.util.Base64;
 import java.util.Set;
+import Interfaces.ClientMainMenuInterface;
 
 public class ClientMainMenu implements ClientMainMenuInterface {
     private Socket socket;

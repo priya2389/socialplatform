@@ -1,5 +1,5 @@
 // Package
-package MainClasses;
+package Interfaces;
 
 public interface GuiInterface {
 

@@ -1,8 +1,10 @@
 // Package
-package MainClasses;
+package Interfaces;
 
 // Imports
 import java.util.List;
+
+import MainClasses.Comment;
 
 public interface PostInterface {
 

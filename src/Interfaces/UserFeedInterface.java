@@ -1,9 +1,12 @@
 // Package
-package MainClasses;
+package Interfaces;
 
 // Imports
 
 import java.util.List;
+
+import MainClasses.FriendRequestSystem;
+import MainClasses.Post;
 
 public interface UserFeedInterface {
 
