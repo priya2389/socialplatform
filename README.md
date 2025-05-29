@@ -15,7 +15,7 @@ The product is a robust, lightweight social networking platform designed to prov
 - git clone https://github.com/pate2389/socialplatform.git
 
 - # Navigate to project directory
-- cd BoilerFriends
+- cd socialplatform
 
 - # Compile server components
 - javac Prod/*.java
