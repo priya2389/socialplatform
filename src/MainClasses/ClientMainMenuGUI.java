@@ -491,12 +491,15 @@ public class ClientMainMenuGUI extends JFrame implements GuiInterface {
         try {
             sendRequest("REGISTER|" + name + "|" + username + "|" + password);
             String response = (String) in.readObject();
+            String[] parts = response.split("\\|");
+            String command = parts[0];
+            String error = parts[1];
             if (response.contains("SUCCESS")) {
                 JOptionPane.showMessageDialog(this, "Account created successfully!",
                         "Success", JOptionPane.INFORMATION_MESSAGE);
                 cardLayout.show(mainPanel, "Login");
             } else {
-                JOptionPane.showMessageDialog(this, response.split("\\|")[1],
+                JOptionPane.showMessageDialog(this, error,
                         "Registration Error", JOptionPane.ERROR_MESSAGE);
             }
         } catch (IOException | ClassNotFoundException e) {

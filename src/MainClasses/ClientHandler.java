@@ -166,9 +166,17 @@ public class ClientHandler implements Runnable, ClientHandlerInterface {
         String name = parts[1];
         String username = parts[2];
         String password = parts[3];
-        boolean success = userManager.registerUser(name, username, password);
-        return success ? "SUCCESS|Account created successfully." :
-                "FAILURE|Username already exists or invalid password.";
+        String returnMe;
+        String result = userManager.registerUser(name, username, password);
+        if (result.equalsIgnoreCase("usernameError")) {
+            returnMe = "FAILURE|Username already exists.";}
+        else if (result.equalsIgnoreCase("passwordError")) {
+            returnMe = "FAILURE|Password must be at least 8 characters long, contain one uppercase letter, " +
+                    "one digit, and one special character";}
+        else {
+            returnMe = "SUCCESS|Account created successfully.";}
+        System.out.println(returnMe);
+        return returnMe;
     }
 
     private String handleLogin(String[] parts) {

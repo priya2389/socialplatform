@@ -32,7 +32,7 @@ public interface UserManagerInterface {
      *
      * @return true if the registration is successful, false if not
      */
-    boolean registerUser(String name, String username, String password);
+    String registerUser(String name, String username, String password);
 
     /**
      * Logs in a user by verifying the username and password

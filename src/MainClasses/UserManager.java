@@ -80,14 +80,14 @@ public class UserManager implements UserManagerInterface {
         return users.containsValue(userId);
     }
 
-    public boolean registerUser(String name, String username, String password) {
+    public String registerUser(String name, String username, String password) {
         if (userExists(username)) {
-            System.out.println("Username already exists.");
-            return false;
+//            System.out.println("Username already exists.");
+            return "usernameError";
         } else if (!isValidPassword(password)) {
-            System.out.println("Password must be at least 8 characters long, " +
-                    "contain one uppercase letter, one digit, and one special character.");
-            return false;
+//            System.out.println("Password must be at least 8 characters long, " +
+//                    "contain one uppercase letter, one digit, and one special character.");
+            return "passwordError";
         }
 
         String userId = UUID.randomUUID().toString().substring(0, 13);
@@ -99,7 +99,7 @@ public class UserManager implements UserManagerInterface {
 
         saveUserToInfoFile(userId, username);
         newUser.saveUserToFile();
-        return true;
+        return "success";
     }
 
     public boolean loginUser(String username, String password) {
