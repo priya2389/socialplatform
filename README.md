@@ -12,7 +12,7 @@ The product is a robust, lightweight social networking platform designed to prov
 ### Server Setup
 ```bash
 - # Clone the repository
-- git clone https://github.com/yourusername/BoilerFriends.git
+- git clone https://github.com/pate2389/socialplatform.git
 
 - # Navigate to project directory
 - cd BoilerFriends
