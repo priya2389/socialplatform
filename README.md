@@ -61,7 +61,7 @@ java Prod.ClientMainMenuGUI localhost 12345
 - Send, accept reject friend requests
 - Search for users
 - Blocking users and privacy controls
-- 
+
 
 ### Content Management
 - Text and image-based post creation
